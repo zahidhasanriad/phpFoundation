@@ -74,3 +74,49 @@ if($a == $b){
 
 	echo "Hello"; 
 }*/ //if we use this 3 can't be assigned any value so we need atleast ==
+
+$a ='3';
+
+if( 3 == $a)
+{
+
+	echo "Hello"; 
+}
+
+if( 3 === $a) //value & type check exactly eqaul to
+{
+
+	echo "Hello"; 
+}
+
+$a =3;
+
+if( 3 == $a)
+{
+
+	echo "Hello"; 
+}
+
+if( 3 === $a)
+{
+
+	echo "Hello"; 
+}
+
+echo"<br />............" ;
+
+$a ='3';
+
+if( 3 == $a)
+{
+
+	echo "Hello"; 
+}
+
+if( 3 === $a) //value & type check exactly eqaul to
+{
+
+	echo "Hi"; 
+}
+
+echo"<br />............" ;

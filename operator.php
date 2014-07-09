@@ -33,3 +33,9 @@ $b=2;
 echo ++a *(a++ + --b); //bracket will work first
 
 echo"<br />............" ;
+
+$a= 5;
+
+echo (bool) $a; // type casted to boolean
+
+echo"<br />............" ;

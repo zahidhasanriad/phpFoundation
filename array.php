@@ -56,3 +56,5 @@ print_r($arr2D);
 echo "</pre>";
 
 echo "<br/>........................<br/>" ;
+
+echo $arr2D [1]['b'];

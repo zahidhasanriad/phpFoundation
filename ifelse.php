@@ -1,6 +1,7 @@
 <?php
 
-$marks=73;
+//$marks=73;
+$marks=63;
 
 if($marks >= 80 && $marks <= 100)
 	$grade="A+";

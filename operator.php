@@ -11,3 +11,13 @@ echo $y."<br/>";//0
 echo $z."<br/>";//250
 echo $a."<br/>";//0
 echo $b."<br/>";//0
+echo"<br />............" ;
+//Unary operators
+
+$a=2;
+
+echo $a++."<br />"; //2
+echo $a--."<br />"; //3
+echo ++$a."<br />"; //3
+echo --$a."<br />"; //2
+echo $a."<br />"; //2

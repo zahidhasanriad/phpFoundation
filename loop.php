@@ -1,12 +1,13 @@
 <?php
 
-$a= 1; 
+$start  = 1;
+$finish = 10
+$sum = 0;
 
-$b= 10;
-$d=0;
-for($c=$a;$c<$b;$c++){
-$d=$c+$d;
+	for($Count=$start;$Count<$finish ;$Count++)
+		{
+			$sum=$Count+$sum;
 
-}
+		}
 
-echo $d;
+			echo $sum;

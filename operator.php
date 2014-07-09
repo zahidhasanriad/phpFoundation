@@ -30,7 +30,7 @@ echo"<br />............" ;
 $a=4;
 $b=2;
 
-echo ++a *(a++ + --b); //bracket will work first
+echo "++a *(a++ + --b)"; //bracket will work first
 
 echo"<br />............" ;
 
@@ -42,5 +42,35 @@ echo (int) '123'; //123
 echo (int) 'dfdfdfadsd'; //0
 echo (int) '123asdasd'; // if value first then till character number showed 123
 echo (int) 'sdasdas1254'; //if character first then 0
+
 echo"<br />............" ;
 
+//not operator or reverse operator
+
+$a= '0';
+//$a = ' ';
+echo (bool) !$a; // type casted to boolean
+
+echo"<br />............" ;
+
+//comparison
+
+$a = 3;
+$b = 5;
+
+if($a = $b){
+
+echo "Hello"; // hello will be printed
+
+}
+
+if($a == $b){
+
+	echo "Hello"; // hello will be printed
+}
+
+/*if( 3 = $a)
+{
+
+	echo "Hello"; 
+}*/ //if we use this 3 can't be assigned any value so we need atleast ==

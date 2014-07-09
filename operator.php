@@ -34,8 +34,13 @@ echo ++a *(a++ + --b); //bracket will work first
 
 echo"<br />............" ;
 
-$a= 0;
+$a= '0';
 //$a = ' ';
 echo (bool) $a; // type casted to boolean
 
+echo (int) '123'; //123
+echo (int) 'dfdfdfadsd'; //0
+echo (int) '123asdasd'; // if value first then till character number showed 123
+echo (int) 'sdasdas1254'; //if character first then 0
 echo"<br />............" ;
+

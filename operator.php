@@ -34,8 +34,8 @@ echo ++a *(a++ + --b); //bracket will work first
 
 echo"<br />............" ;
 
-$a= 5;
-
+$a= 0;
+//$a = ' ';
 echo (bool) $a; // type casted to boolean
 
 echo"<br />............" ;

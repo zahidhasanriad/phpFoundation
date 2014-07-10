@@ -8,8 +8,11 @@ class User
 	var $name = "FTFL";
 	var $email = "";
 	
-		
 
+	function getName(){
+
+		return "FTFL2";
+	}
 
 
 }
@@ -24,3 +27,5 @@ var_dump($user);
 
 //accessing property of a class
 echo $user->name;
+
+echo $user->getName();

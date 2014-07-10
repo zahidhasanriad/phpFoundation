@@ -2,14 +2,25 @@
 
 //Declaring a class
 
-class Student {
+class User 
+{
+
+	var $name = "FTFL";
+	var $email = "";
 	
+		
+
+
+
 }
 
 //Isntantiation of a class
 
-$user = new Student();
+$user = new User();
 
 //Visualize a object from class Student
 
 var_dump($user); 
+
+//accessing property of a class
+echo $user->name;

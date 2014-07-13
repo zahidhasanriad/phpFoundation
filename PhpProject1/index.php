@@ -21,13 +21,13 @@
                 $name=$_GET['nameText'];
                 $salary=$_GET['salaryText'];
                 
-                $Borrower = new OfficeEmployee();
-                $Borrower->id = $_GET['idText'];
-                $Borrower->name = $_GET['nameText'];
-                $Borrower->salary = $_GET['salaryText'];
-                 $anEmployee_with_bonus = $Borrower->get_salary_with_bonus();
+                $anEmployee = new OfficeEmployee();
+                $anEmployee->id = $_GET['idText'];
+                $anEmployee->name = $_GET['nameText'];
+                $anEmployee->salary = $_GET['salaryText'];
                 
-                echo $Borrower->id.' '.$Borrower->name.' '.'salary'.$Borrower->salary.' '.'salary with bonus'.$anEmployee_with_bonus;            
+                
+                echo $anEmployee->id.' '.$anEmployee->name.' '.$anEmployee->salary;            
             }
         ?>
     </body>

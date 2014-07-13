@@ -13,8 +13,8 @@
  */
 class Borrower {
  
-    public $principalAmount;
-    public $annualinterestRate;
+    public $principal_amount;
+    public $annual_interest_rate;
     public $timePeriod;
     
     

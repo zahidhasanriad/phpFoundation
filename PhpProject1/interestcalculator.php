@@ -24,11 +24,11 @@
                 $annualinterestRate=$_GET['annualinterestRateText'];
                 $timePeriod=$_GET['timePeriodText'];
                 
-               $borrower = new Borrower();
-                $borrower->principalAmount = $_GET['principalAmountText'];
-                $borrower->annualinterestRate = $_GET['annualinterestRateText'];
-                $borrower->timePeriod = $_GET['timePeriodText'];
-                 $total_interest_calculation = $borrower->getTotalInterestAmount();
+               $interest_calculator = new Borrower();
+                $interest_calculator->principalAmount = $_GET['principalAmountText'];
+                $interest_calculator->annualinterestRate = $_GET['annualinterestRateText'];
+                $interest_calculator->timePeriod = $_GET['timePeriodText'];
+                 $total_interest_calculation = $interest_calculator->getTotalInterestAmount();
                 
                 echo 'Total Interst Amount is '.$total_interest_calculation;
             }

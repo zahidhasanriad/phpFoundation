@@ -13,25 +13,25 @@ var $id = "";
 			function __construct($id ="007", $names ="James",$salary = 10000){
 
 		
-		$this->id= $id;
-		$this->names= $names;
-		$this->salary= $salary;
-	}
+				$this->id= $id;
+				$this->names= $names;
+				$this->salary= $salary;
+			}
 
-	function getID(){
+		function getID(){
 
 		return $this->id;
-	}
+		}
 
-	function getNames(){
+		function getNames(){
 
 		return $this->names;
-	}
+		}
 
-	function getSalary(){
+		function getSalary(){
 
 		return $this->salary;
-	}
+		}
 
 
 

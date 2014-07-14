@@ -50,19 +50,20 @@
             }
         
         if(isset($_GET['add'])){
-        echo 'Addition of two number: '.$calculator->get_add_result_of_two_numbers($calculator->first_no,$calculator->second_no);
+        echo 'Addition of two number: '.$calculator->add($calculator->first_no,$calculator->second_no);
         }
         
         else if(isset($_GET['subtract'])){
-        echo 'Subtraction of two number: '.$calculator->get_subtract_result_of_two_numbers($calculator->first_no,$calculator->second_no);
+        echo 'Subtraction of two number: '.$calculator->subtract($calculator->first_no,$calculator->second_no);
         }
         
         else if(isset($_GET['multiply'])){
-        echo 'Multiplication of two number: '.$calculator->get_multiply_result_of_two_numbers($calculator->first_no,$calculator->second_no);
+        echo 'Multiplication of two number: '.$calculator->multiply($calculator->first_no,$calculator->second_no);
         }
         
         else if(isset($_GET['divide'])){
-        echo 'Dividation of two number: '.$calculator->get_divide_result_of_two_numbers($calculator->first_no,$calculator->second_no);
+            
+                echo 'Dividation of two number: '.$calculator->divide($calculator->first_no,$calculator->second_no);
         }
         
             

@@ -63,6 +63,7 @@ and open the template in the editor.
         
         require_once 'account.php';
         require_once 'customer.php';
+        require_once 'calculator.php';
         
         session_start();
         

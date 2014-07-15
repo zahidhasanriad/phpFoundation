@@ -6,12 +6,13 @@ class Account {
     private $account_number;
     private $opening_date;
     private $balance;
-    
+    private $calculator;
     
     function __construct($account_number, $opening_date) {
         $this->account_number = $account_number;
         $this->opening_date = $opening_date;
         $this->balance = 0;
+        $this->calculator = new Calculator();
     }
     
     public function get_account_number() {
@@ -32,7 +33,7 @@ class Account {
     public function deposit($amount)
            {
         
-        $this->balance += $amount;
+         $this->balance = $this->calculator->add($this->balance, $amount);
         
             return 'deposited';
            }
@@ -41,7 +42,7 @@ class Account {
            {
         
               if($this->balance - $amount >=0){
-                    $this->balance -= $amount;
+                    $this->balance = $this->calculator->subtract($this->balance, $amount);
                 return 'withdrwan';
               }
               

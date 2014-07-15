@@ -47,13 +47,22 @@ and open the template in the editor.
             Amount: <input type="text" name='amountText'> <br />
             <input type='submit' name='depositButton' value='Deposit'/>
             <input type='submit' name='withdrawButton' value='Withdraw'/><br />
-            <input type='submit' name='showReportButton' value='Show Report'/>
+            <input type="submit" name='showReportButton' value="Show Report">
            </form>
          
+        
+       
+        
         <?php
         
-        require 'account.php';
-        require 'customer.php';
+        /* <form action="show_report.php" method="GET">
+            
+            
+            
+        </form>  body te hobe */
+        
+        require_once 'account.php';
+        require_once 'customer.php';
         
         session_start();
         
@@ -97,17 +106,14 @@ and open the template in the editor.
             }
             
             if(isset($_GET['showReportButton']))
-            {
-              $customer = $_SESSION['a_customer'];
+        {
+             $customer = $_SESSION['a_customer'];
                  
               echo $customer->get_customer_account()->get_account_number().'<br/>';
               echo $customer->get_customer_name().'<br/>';
               echo $customer->get_customer_account()->get_opening_date().'<br/>';
               echo $customer->get_customer_account()->get_balance().'<br/>';
-              
-                  
-             }
-        
+        }   
        
         
         

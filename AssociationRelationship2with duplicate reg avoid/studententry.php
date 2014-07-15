@@ -7,13 +7,29 @@ and open the template in the editor.
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
+        <style>
+            table{
+                
+                background-color: #6666ff;
+            }
+        </style>
     </head>
     <body>
         <form method ="POST">
-            Student Reg no : <input type ="text" name ="regNoText"><br/>
-            Name : <input type ="text" name ="nameText"><br/>
-            Email : <input type ="text" name ="emailText"><br/>
-            <input type="submit" value ="Save" name='save'>
+            <table>
+                <tr>
+                    <td>Student Reg no : <input type ="text" name ="regNoText"><br/></td>
+                </tr>
+                <tr>
+                    <td>Name : <input type ="text" name ="nameText"><br/></td>
+                </tr>
+                <tr>
+                    <td>Email : <input type ="text" name ="emailText"><br/></td>
+                </tr>
+                <tr> 
+                    <td><input type="submit" value ="Save" name='save'></td>
+                </tr>
+            </table>
         </form>
         <?php
          {

@@ -19,11 +19,12 @@ class Department {
             foreach ($this->student_list as $student) {
                 if($a_student->get_reg_no() == $student->get_reg_no()){
                     
-                // $this->student_list[] = $a_student;
+                $student->set_name($a_student->get_name());
+                $student->set_email($a_student->get_email());
                     
                     
                     
-                    return 'Reg No Taken';
+                    return 'Reg No Updated';
                 }
             }
             

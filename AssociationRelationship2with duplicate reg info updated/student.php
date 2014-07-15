@@ -11,20 +11,34 @@ class Student {
         $this->email = $email;
     }
     
-    function get_name()
+    public function get_name()
     {
         return $this->name;
     }
     
-    function get_email()
+    public function get_email()
     {
         return $this->email;
     }
     
-    function get_reg_no()
+    public function get_reg_no()
     {
         return $this->reg_no;
     } 
-}
+    
+    public function set_name($name)
+    {
+        $this->name = $name;
+    }
+
+    public function set_email($email) {
+        $this->email = $email;
+    }
+
+
+
+
+   
+ }
 
 ?>
